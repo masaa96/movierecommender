@@ -14,9 +14,6 @@ pom = sum(np.multiply(Y[0,],R[0,]))
 
 print('Average rating for movie 1 (Toy Story): {:f} / 5\n\n').format(pom/float(n))
 
-print('\nProgram paused.\n')
-os.system("pause")
-
 mat = spio.loadmat('ex8_movieParams.mat', squeeze_me=True)
 
 X = mat['X']
