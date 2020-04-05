@@ -1,6 +1,5 @@
 import scipy.io as spio
 import numpy as np
-import os
 
 print('Loading movie ratings dataset.\n\n')
 
@@ -12,10 +11,9 @@ R = mat['R']
 n = sum(R[0,])
 pom = sum(np.multiply(Y[0,],R[0,]))
 
-print('Average rating for movie 1 (Toy Story): {:f} / 5\n\n').format(pom/float(n))
+print('Average rating for movie 1 (Toy Story): {:f} / 5\n\n'.format(pom/float(n)))
 
 print('\nProgram paused.\n')
-os.system("pause")
 
 mat = spio.loadmat('ex8_movieParams.mat', squeeze_me=True)
 
