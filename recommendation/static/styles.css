@@ -1,8 +1,19 @@
 .jpg {
     position: relative;
-    margin: auto;
+    margin-bottom: 5px;
+    height: 310px;
     width: 18%;
 }
-.gallery {
-    background-color: black;
+.content {
+    padding-top: 50px;
+    padding-left: 9%;
+    margin: auto;
+}
+body {
+    background-color: #0d0d0d;
+    padding-bottom: 10px;
+}
+.navbar-brand {
+    color: rgb(205, 165, 90) !important;
+    font-weight: bold;
 }

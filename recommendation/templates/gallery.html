@@ -1,13 +1,6 @@
-<html>
-<head>
-    <title>Image gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-
-<div class="gallery">
+{% extends "base.html" %}
+{% block title %}Image gallery{% endblock %}
+{% block content %}
     <img src="{{ url_for('static', filename='images/adangerousmethod.jpg') }}" class="jpg">
     <img src="{{ url_for('static', filename='images/bartonfink.jpg') }}" class="jpg">
     <img src="{{ url_for('static', filename='images/blackswan.jpg') }}" class="jpg">
@@ -28,7 +21,4 @@
     <img src="{{ url_for('static', filename='images/twoisafamily.jpg') }}" class="jpg">
     <img src="{{ url_for('static', filename='images/waitress.jpg') }}" class="jpg">
     <img src="{{ url_for('static', filename='images/whiplash.jpg') }}" class="jpg">
-</div>
-
-</body>
-</html>
+{% endblock %}
